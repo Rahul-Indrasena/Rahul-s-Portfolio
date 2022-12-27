@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69135fb47f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/new1.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Programmer</p>
+            <h1>Hi, I'm <span>Rahul</span><br>Indrasena</h1>
+        </div>
+    </div>
+</div>
+<!-- --------------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/vader11.png.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <ul class='info-list' >
+                    <li>
+                        <strong>Name:</strong>
+                        <span>Rahul Indrasena</span>
+                    </li><br>
+                    <li>
+                        <strong>Job:</strong>
+                        <span>Fresher/Freelancer/Web Dev</span>
+                    </li><br>
+                    <li>
+                        <strong>Age:</strong>
+                        <span>18 Years</span>
+                    </li><br>
+                    <li>
+                        <strong>Residence:</strong>
+                        <span>Indian</span>
+                    </li><br>
+                    <li>
+                        <strong>Hometown:</strong>
+                        <span>Chennai</span>
+                    </li><br>
+                </ul>
+                <p>
+                    I have chosen to study computer science because I am fascinated by how computers work and I spend most of my spare time designing programs and web pages because I enjoy problem solving and logical thinking... Throughout my academic life, I have had different ideas about what career I would pursue in the future.	               
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('languages')">Languages Known</p>
+                    <p class="tab-links" onclick="opentab('works')">My Works</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="languages">
+                    <ul>
+                        <li><span>C</span><br><br></li>
+                        <li><span>C++</span><br><br></li>
+                        <li><span>Python</span><br><br></li>
+                        <li><span>Java</span><br><br></li>
+                        <li><span>CSS</span><br><br></li>
+                        <li><span>HTML</span><br><br></li>
+                        <li><span>Javascript</span><br><br></li>
+                        <li><span>Mysql</span><br><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="works">
+                    <ul>
+                        <li><span><strong>PROJECT :</strong></span><br>A secured file sharing system which implements the ways of both Inter Planetary File System(IPFS) and blockchain...</li><br>
+                        <li><span><strong>EVENTS :</strong></span><br>Attended a intercollege competition in my college...</li><br>
+                        <li><span><strong>SYMPOSIUM :</strong></span><br>Attended a national level symposium and two college level symposium in first and second year...</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><strong>2021 - PRESENT :</strong></span><br>Pursuing my BE Computer Science degree at Vel Tech High Tech Dr.Rangarajan Dr.Sakunthala Engineering College</li><br>
+                        <li><span><strong>2014 - 2021 :</strong></span><br>Completed my SSLC and HSC at SBOA Matriculation and Higher Secondary School</li><br>
+                        <li><span><strong>2007 - 2014 :</strong></span><br>Completed till 6th standard at Joyhill Matriculation School</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------- services -------------------- --->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p></p>
+              <a href="#">Learn more</a>
+           </div>
+         <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p></p>
+            <a href="#">Learn more</a>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------- contact ------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> raghulbalaji2014@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i> (+91) 88256 00984</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div><br>
+                <a href="images/surprise.txt" download class="btn btn2">Download CV</a>
+            </div>
+            <div class ="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6"  placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Rahul. </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbx0OrfVCuFSATLZggrlTY-uoXzjMyG_Kke785_4XMDssgbmi44zyMC2akf8Mwdjy5J9/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
